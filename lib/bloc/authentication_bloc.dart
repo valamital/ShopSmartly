@@ -63,9 +63,13 @@ class AuthenticationBloc extends Bloc<AuthenticationEvent, AuthenticationState> 
           idToken: googleSignInAuthentication.idToken,
         );
 
-        await _auth.signInWithCredential(credential);
+// Sign in with the credential once
+        UserCredential authResult = await _auth.signInWithCredential(credential);
 
+        User user = authResult.user!;
 
+// Emit AuthenticationSuccessState with the user
+        emit(AuthenticationSuccessState(user as UserModel));
       } catch (e) {
       }
       emit(AuthenticationLoadingState(isLoading: false));

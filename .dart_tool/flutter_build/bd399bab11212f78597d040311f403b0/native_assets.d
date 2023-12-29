@@ -1,0 +1,1 @@
+ /Users/ganesha/Documents/Project\ clone/ShopSmartly/ShopSmartly/.dart_tool/flutter_build/bd399bab11212f78597d040311f403b0/native_assets.yaml: 

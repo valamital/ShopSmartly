@@ -7,6 +7,7 @@ import 'package:shop_smartly/screens/auth_flow.dart';
 import 'bloc/authentication_bloc.dart';
 import 'firebase_options.dart';
 
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
